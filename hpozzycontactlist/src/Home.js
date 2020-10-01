@@ -18,7 +18,7 @@ function Home() {
         <ul className="userList">
           <h2>My Peeps</h2>
           {users.map((item) => (
-            <Link to={`/userInfo/${item.id}`} key={item.id}>
+            <Link to={`/userInfo/${item.id}`} key={item.id} className="noLinks">
               <li>
                 <img className="thumbNails" src={item.picture.thumbnail}></img>
                 {item.name.first} {item.name.last}
